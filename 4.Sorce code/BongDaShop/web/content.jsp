@@ -33,9 +33,9 @@
 						</div>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="single.html"><img  src="images/pi1.jpg" alt="" />	</a>
+								<a href="single.html"><img  src="images/giay2.jpg" alt="" />	</a>
 								<div class="top-content">
-									<h5><a href="single.html">Bite Me</a></h5>
+									<h5><a href="single.html">COPA 2018</a></h5>
 									<div class="white">
 										<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">ADD TO CART</a>
 										<p class="dollar"><span class="in-dollar">$</span><span>3</span><span>0</span></p>
@@ -46,9 +46,22 @@
 						</div>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="single.html"><img  src="images/pi2.jpg" alt="" /></a>	
+								<a href="single.html"><img  src="images/giay3.jpg" alt="" /></a>	
 								<div class="top-content">
-									<h5><a href="single.html">Little Fella</a></h5>
+									<h5><a href="single.html">COPA 2018</a></h5>
+									<div class="white">
+										<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">ADD TO CART</a>
+										<p class="dollar"><span class="in-dollar">$</span><span>5</span><span>0</span></p>
+										<div class="clearfix"></div>
+									</div>
+								</div>							
+							</div>
+						</div>
+                                                <div class="col-md-3 md-col">
+							<div class="col-md">
+								<a href="single.html"><img  src="images/giay5.jpg" alt="" /></a>	
+								<div class="top-content">
+									<h5><a href="single.html">COPA 2018</a></h5>
 									<div class="white">
 										<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">ADD TO CART</a>
 										<p class="dollar"><span class="in-dollar">$</span><span>5</span><span>0</span></p>
@@ -59,9 +72,48 @@
 						</div>
 						<div class="col-md-3 md-col">
 							<div class="col-md">
-								<a href="single.html"><img  src="images/pi3.jpg" alt="" /></a>	
+								<a href="single.html"><img  src="images/aokhoac2.png" alt="" /></a>	
 								<div class="top-content">
-									<h5><a href="single.html">Astral Cruise</a></h5>
+									<h5><a href="single.html">Áo khoác</a></h5>
+									<div class="white">
+										<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">ADD TO CART</a>
+										<p class="dollar"><span class="in-dollar">$</span><span>4</span><span>5</span></p>
+										<div class="clearfix"></div>
+									</div>
+								</div>							
+							</div>
+						</div>
+                                                <div class="col-md-3 md-col">
+							<div class="col-md">
+								<a href="single.html"><img  src="images/aokhoac9.png" alt="" /></a>	
+								<div class="top-content">
+									<h5><a href="single.html">Áo khoác</a></h5>
+									<div class="white">
+										<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">ADD TO CART</a>
+										<p class="dollar"><span class="in-dollar">$</span><span>4</span><span>5</span></p>
+										<div class="clearfix"></div>
+									</div>
+								</div>							
+							</div>
+						</div>
+                                                <div class="col-md-3 md-col">
+							<div class="col-md">
+								<a href="single.html"><img  src="images/aokhoac7.png" alt="" /></a>	
+								<div class="top-content">
+									<h5><a href="single.html">Áo khoác</a></h5>
+									<div class="white">
+										<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">ADD TO CART</a>
+										<p class="dollar"><span class="in-dollar">$</span><span>4</span><span>5</span></p>
+										<div class="clearfix"></div>
+									</div>
+								</div>							
+							</div>
+						</div>
+                                                <div class="col-md-3 md-col">
+							<div class="col-md">
+								<a href="single.html"><img  src="images/aokhoac10.png" alt="" /></a>	
+								<div class="top-content">
+									<h5><a href="single.html">Áo khoác</a></h5>
 									<div class="white">
 										<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">ADD TO CART</a>
 										<p class="dollar"><span class="in-dollar">$</span><span>4</span><span>5</span></p>
@@ -74,7 +126,7 @@
 					</div>
 				</div>
 				<!---->
-				<div class="content-middle">
+<!--				<div class="content-middle">
 					<h3 class="future">BRANDS</h3>
 					<div class="content-middle-in">
 					<ul id="flexiselDemo1">			
@@ -114,8 +166,8 @@
 	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 
 					</div>
-				</div>
-				<!---->
+				</div>-->
+			<!---->
 				<div class="content-bottom">
 					<h3 class="future">LATEST</h3>
 					<div class="content-bottom-in">
@@ -214,7 +266,7 @@
 				<ul class="start">
 					<li ><a href="#"><i></i></a></li>
 					<li><span>1</span></li>
-					<li class="arrow"><a href="#">2</a></li>
+					<li class="arrow"><a href="subcontent2.jsp">2</a></li>
 					<li class="arrow"><a href="#">3</a></li>
 					<li class="arrow"><a href="#">4</a></li>
 					<li class="arrow"><a href="#">5</a></li>

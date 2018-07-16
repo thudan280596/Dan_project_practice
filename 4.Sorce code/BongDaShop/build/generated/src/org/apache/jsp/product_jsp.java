@@ -63,11 +63,11 @@ public final class product_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t<div class=\"content-top-in\">\n");
       out.write("\t\t\t\t\t\t<div class=\"col-md-3 md-col\">\n");
       out.write("\t\t\t\t\t\t\t<div class=\"col-md\">\n");
-      out.write("\t\t\t\t\t\t\t\t<a href=\"single.html\"><img  src=\"images/pi.jpg\" alt=\"\" /></a>\t\n");
+      out.write("\t\t\t\t\t\t\t\t<a href=\"single.html\"><img  src=\"images/giay1.jpg\" alt=\"\" /></a>\t\n");
       out.write("\t\t\t\t\t\t\t\t<div class=\"top-content\">\n");
-      out.write("\t\t\t\t\t\t\t\t\t<h5><a href=\"single.html\">Mascot Kitty - White</a></h5>\n");
+      out.write("\t\t\t\t\t\t\t\t\t<h5><a href=\"single.html\">Giày đá bóng</a></h5>\n");
       out.write("\t\t\t\t\t\t\t\t\t<div class=\"white\">\n");
-      out.write("\t\t\t\t\t\t\t\t\t\t<a href=\"single.html\" class=\"hvr-shutter-in-vertical hvr-shutter-in-vertical2 \">ADD TO CART</a>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<a href=\"single.html\" class=\"hvr-shutter-in-vertical hvr-shutter-in-vertical2 \">Thêm vào giỏ</a>\n");
       out.write("\t\t\t\t\t\t\t\t\t\t<p class=\"dollar\"><span class=\"in-dollar\">$</span><span>2</span><span>0</span></p>\n");
       out.write("\t\t\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div>\n");
       out.write("\t\t\t\t\t\t\t\t\t</div>\n");
@@ -77,9 +77,9 @@ public final class product_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t</div>\n");
       out.write("\t\t\t\t\t\t<div class=\"col-md-3 md-col\">\n");
       out.write("\t\t\t\t\t\t\t<div class=\"col-md\">\n");
-      out.write("\t\t\t\t\t\t\t\t<a href=\"single.html\"><img  src=\"images/pi1.jpg\" alt=\"\" />\t</a>\n");
+      out.write("\t\t\t\t\t\t\t\t<a href=\"single.html\"><img  src=\"images/giay8.jpg\" alt=\"\" />\t</a>\n");
       out.write("\t\t\t\t\t\t\t\t<div class=\"top-content\">\n");
-      out.write("\t\t\t\t\t\t\t\t\t<h5><a href=\"single.html\">Bite Me</a></h5>\n");
+      out.write("\t\t\t\t\t\t\t\t\t<h5><a href=\"single.html\">Áo khoác</a></h5>\n");
       out.write("\t\t\t\t\t\t\t\t\t<div class=\"white\">\n");
       out.write("\t\t\t\t\t\t\t\t\t\t<a href=\"single.html\" class=\"hvr-shutter-in-vertical hvr-shutter-in-vertical2\">ADD TO CART</a>\n");
       out.write("\t\t\t\t\t\t\t\t\t\t<p class=\"dollar\"><span class=\"in-dollar\">$</span><span>3</span><span>0</span></p>\n");
@@ -90,9 +90,9 @@ public final class product_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t</div>\n");
       out.write("\t\t\t\t\t\t<div class=\"col-md-3 md-col\">\n");
       out.write("\t\t\t\t\t\t\t<div class=\"col-md\">\n");
-      out.write("\t\t\t\t\t\t\t\t<a href=\"single.html\"><img  src=\"images/pi2.jpg\" alt=\"\" /></a>\t\n");
+      out.write("\t\t\t\t\t\t\t\t<a href=\"single.html\"><img  src=\"images/giay2.jpg\" alt=\"\" /></a>\t\n");
       out.write("\t\t\t\t\t\t\t\t<div class=\"top-content\">\n");
-      out.write("\t\t\t\t\t\t\t\t\t<h5><a href=\"single.html\">Little Fella</a></h5>\n");
+      out.write("\t\t\t\t\t\t\t\t\t<h5><a href=\"single.html\">Real</a></h5>\n");
       out.write("\t\t\t\t\t\t\t\t\t<div class=\"white\">\n");
       out.write("\t\t\t\t\t\t\t\t\t\t<a href=\"single.html\" class=\"hvr-shutter-in-vertical hvr-shutter-in-vertical2\">ADD TO CART</a>\n");
       out.write("\t\t\t\t\t\t\t\t\t\t<p class=\"dollar\"><span class=\"in-dollar\">$</span><span>5</span><span>0</span></p>\n");
@@ -103,7 +103,7 @@ public final class product_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t\t\t</div>\n");
       out.write("\t\t\t\t\t\t<div class=\"col-md-3 md-col\">\n");
       out.write("\t\t\t\t\t\t\t<div class=\"col-md\">\n");
-      out.write("\t\t\t\t\t\t\t\t<a href=\"single.html\"><img  src=\"images/pi3.jpg\" alt=\"\" /></a>\t\n");
+      out.write("\t\t\t\t\t\t\t\t<a href=\"single.html\"><img  src=\"images/giay5.jpg\" alt=\"\" /></a>\t\n");
       out.write("\t\t\t\t\t\t\t\t<div class=\"top-content\">\n");
       out.write("\t\t\t\t\t\t\t\t\t<h5><a href=\"single.html\">Astral Cruise</a></h5>\n");
       out.write("\t\t\t\t\t\t\t\t\t<div class=\"white\">\n");

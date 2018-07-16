@@ -19,17 +19,17 @@
 			<h2 class=" contact-in">LIÊN HỆ</h2>
 				
 				<div class="col-md-6 contact-top">
-					<h3>Info</h3>
+					<h3>Địa chỉ</h3>
 					<div class="map">
                                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3918.4892612808717!2d106.78742031440007!3d10.850342992271436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1531626164463" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 					
-					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas </p>
-					<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id </p>				
+					<p>Bongdashop: Cửa hàng chuyên bán đồ bóng đá. </p>
+					<p>Bán quần áo bóng đá, quần áo thi đấu bóng đá, áo đá bóng, áo bóng đá tuyển quốc gia, áo bóng đá câu lạc bộ, áo bóng đá không logo, giày đá bóng và các phụ kiện đá bóng.</p>				
 					<ul class="social ">
 						<li><span><i > </i>44 Man Thiện, phường Tăng Nhơn Phú A, quận 9, tp Hồ Chí Minh, Việt Nam </span></li>
 						<li><span><i class="down"> </i>+ 01683349864</span></li>
-                                                <li><span><i class="down"> </i>+ 0902770912</span></li>
+                                             
 						<li><a href="mailto:lethithudan@gmail.com"><i class="mes"> </i>lethithudan@gmail.com</a></li>
 					</ul>
 				</div>

@@ -75,10 +75,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="header-in">
 					<ul class="icon1 sub-icon1">
-							<li  ><a href="wishlist.html">WISH LIST (0)</a> </li>
-							<li  ><a href="account.html">  MY ACCOUNT</a></li>
-							<li ><a href="#" > SHOPPING CART</a></li>
-							<li > <a href="checkout.html" >CHECKOUT</a> </li>	
+							<li  ><a href="wishlist.html">DANH SÁCH</a> </li>
+							<li  ><a href="account.html">  TÀI KHOẢN </a></li>
+							<li ><a href="#" > GIỎ HÀNG </a></li>
+							<li > <a href="checkout.html" >KIỂM TRA</a> </li>	
 							<li><div class="cart">
 									<a href="#" class="cart-in"> </a>
 									<span> 0</span>
@@ -159,10 +159,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                         <li><a href="products.html">Việt Nam</a></li>
 						</ul>
 						</li> 
-						<li><a href="products.html" ></a>ĐỒ WORLD CUP</li>            
+						<li><a href="worldcup.jsp" >ĐỒ WORLD CUP</a></li>            
 						<!--<li><a href="products.html" ></a>ĐỒ WORLD CUP 2018</li>-->						  				 
-						<li><a href="products.html" ></a>ÁO KHOÁC</li>
-						<li><a href="products.html" ></a>GÌAY</li>
+						<li><a href="aokhoac.jsp" >ÁO KHOÁC</a></li>
+						<li><a href="giay.jsp" >GÌAY</a></li>
 						<li><a href="products.html" >PHỤ KIỆN</a>
                                                     <ul class="drop">
 							<li><a href="products.html">Bóng</a></li>
