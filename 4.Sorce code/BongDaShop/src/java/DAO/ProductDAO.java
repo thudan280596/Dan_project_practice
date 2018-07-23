@@ -31,7 +31,7 @@ public class ProductDAO {
             product.setProductName(rs.getString("product_name"));
             product.setProductImage(rs.getString("product_image"));
             product.setProductPrice(rs.getDouble("product_price"));
-            product.setProductQuantity(rs.getInt("product_quantity"));
+//            product.setProductQuantity(rs.getInt("product_quantity"));
             product.setProductDescription(rs.getString("product_description"));
             list.add(product);
             

@@ -49,7 +49,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>index</title>\n");
-      out.write("                 <link href=\"css/bootstrap.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n");
+      out.write("        <link href=\"css/bootstrap.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />\n");
       out.write("<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n");
       out.write("<script src=\"js/jquery.min.js\"></script>\n");
       out.write("<!-- Custom Theme files -->\n");

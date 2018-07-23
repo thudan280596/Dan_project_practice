@@ -14,19 +14,19 @@ public class Product {
     private long categoryID;
     private String productName;
     private String productImage;
-    private int productQuantity;
+//    private int productQuantity;
     private double productPrice;
     private String productDescription;
 
     public Product() {
     }
 
-    public Product(long productID, long categoryID, String productName, String productImage, int productQuantity, double productPrice, String productDescription) {
+    public Product(long productID, long categoryID, String productName, String productImage, double productPrice, String productDescription) {
         this.productID = productID;
         this.categoryID = categoryID;
         this.productName = productName;
         this.productImage = productImage;
-        this.productQuantity = productQuantity;
+//        this.productQuantity = productQuantity;
         this.productPrice = productPrice;
         this.productDescription = productDescription;
     }
@@ -62,14 +62,14 @@ public class Product {
     public void setProductImage(String productImage) {
         this.productImage = productImage;
     }
-
-    public int getProductQuantity() {
-        return productQuantity;
-    }
-
-    public void setProductQuantity(int productQuantity) {
-        this.productQuantity = productQuantity;
-    }
+//
+//    public int getProductQuantity() {
+//        return productQuantity;
+//    }
+//
+//    public void setProductQuantity(int productQuantity) {
+//        this.productQuantity = productQuantity;
+//    }
 
     public double getProductPrice() {
         return productPrice;
