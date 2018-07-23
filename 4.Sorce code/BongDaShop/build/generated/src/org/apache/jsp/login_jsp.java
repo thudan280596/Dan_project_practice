@@ -111,16 +111,29 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        \n");
       out.write("        <div class=\"container\">\n");
       out.write("\t\t<div class=\"account\">\n");
-      out.write("\t\t\t<h2 class=\"account-in\">Account</h2>\n");
-      out.write("\t\t\t\t<form> \t\n");
+      out.write("\t\t\t<h2 class=\"account-in\">Login</h2>\n");
+      out.write("                        <form action=\"UsersServlet\" method=\"POST\"> \n");
+      out.write("                        ");
+ if(request.getParameter("error")!=null) {
+      out.write("\n");
+      out.write("                                <div>\t\t\t\n");
+      out.write("                                    <p style=\"color: red\">");
+      out.print(request.getParameter("error"));
+      out.write("</p>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("                                \n");
+      out.write("                        ");
+ } 
+      out.write("\n");
       out.write("\t\t\t\t<div>\t\t\t\n");
       out.write("\t\t\t\t\t<span class=\"name-in\">Username*</span>\n");
-      out.write("\t\t\t\t\t<input type=\"text\"> \n");
+      out.write("                                        <input type=\"text\" name=\"email\"> \n");
       out.write("\t\t\t\t</div>\t\t\t\n");
       out.write("\t\t\t\t<div> \n");
       out.write("\t\t\t\t\t<span class=\"word\">Password*</span>\n");
-      out.write("\t\t\t\t\t<input type=\"password\">\n");
-      out.write("\t\t\t\t</div>\t\t\t\t\n");
+      out.write("                                        <input type=\"password\" name=\"pass\">\n");
+      out.write("\t\t\t\t</div>\t\n");
+      out.write("                                    <input type=\"hidden\" value=\"Login\" name=\"command\">\n");
       out.write("\t\t\t\t\t<input type=\"submit\" value=\"Login\"> \n");
       out.write("\t\t\t\t</form>\n");
       out.write("\t\t</div>\n");

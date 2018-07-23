@@ -71,15 +71,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
 		<div class="account">
 			<h2 class="account-in">Login</h2>
-				<form> 	
+                        <form action="UsersServlet" method="POST"> 
+                        <% if(request.getParameter("error")!=null) {%>
+                                <div>			
+                                    <p style="color: red"><%=request.getParameter("error")%></p>
+				</div>
+                                
+                        <% } %>
 				<div>			
 					<span class="name-in">Username*</span>
-					<input type="text"> 
+                                        <input type="text" name="email"> 
 				</div>			
 				<div> 
 					<span class="word">Password*</span>
-					<input type="password">
-				</div>				
+                                        <input type="password" name="pass">
+				</div>	
+                                    <input type="hidden" value="Login" name="command">
 					<input type="submit" value="Login"> 
 				</form>
 		</div>

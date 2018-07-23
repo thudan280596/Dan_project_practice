@@ -93,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="footer-middle">
 				<div class="container">
 					<div class="footer-middle-in">
-						<h6>Về chúng tôi</h6>
+						<h6>Bóng Đá Shop</h6>
 						<p>Cửa hàng bán quần áo bóng đá, quần áo thi đấu bóng đá, áo đá bóng, áo đá banh, áo bóng đá tuyển quốc gia, áo bóng đá câu lạc bộ, may áo bóng đá theo yêu cầu, áo bóng đá không logo, giày đá bóng và các phụ kiện bóng đá.</p>
 					</div>
 					<div class="footer-middle-in">
@@ -106,11 +106,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 					</div>
 					<div class="footer-middle-in">
-						<h6>Dịch vụ khách hàng</h6>
+						<h6>Hỗ trợ khách hàng</h6>
 						<ul>
-							<li><a href="contact.html">Liên hệ với chúng tôi</a></li>
-<!--							<li><a href="#">Returns</a></li>
-							<li><a href="#">Site Map</a></li>-->
+                                                    <p>Hotline: 01683349864</p>
+                                                    <p>Email: lethithudan@gmail.com</p>
+                                                    <p>Địa chỉ: 44 Man Thiện, p. Tăng Nhơn Phú, q.9, tp Hồ Chí Minh</p>
 						</ul>
 					</div>
 					<div class="footer-middle-in">
@@ -118,16 +118,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul>
 							<li><a href="account.html">Tài khoản</a></li>
 							<li><a href="#">Lịch sử</a></li>
-							<li><a href="wishlist.html">Danh sách</a></li>
+							<li><a href="wishlist.html">Danh sách yêu thích</a></li>
 <!--							<li><a href="#">Newsletter</a></li>-->
 						</ul>
 					</div>
 					<div class="footer-middle-in">
 						<h6>Tiện ích</h6>
 						<ul>
-							<li><a href="#">Nhãn hiệu</a></li>
+							<li><a href="#">Thương hiệu</a></li>
 							<li><a href="#">Phiếu quà tặng</a></li>
-							<li><a href="#">Đại lý</a></li>
+							<li><a href="#">Chi nhánh</a></li>
 							<li><a href="#">Ưu đãi đặc biệt</a></li>
 						</ul>
 					</div>

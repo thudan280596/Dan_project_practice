@@ -4,6 +4,9 @@
     Author     : Admin
 --%>
 
+<%@page import="Model.Users"%>
+<%@page import="Model.Category"%>
+<%@page import="DAO.CategoryDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -66,6 +69,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
     </head>
     <body>
+        <%
+            CategoryDAO categoryDAO = new CategoryDAO();
+            Users users = null;
+            if(session.getAttribute("user")!=null){
+               users = (Users) session.getAttribute("user");
+            }
+        %>
        <div class="header">
 		<div class="header-top">
 			<div class="container">	
@@ -74,36 +84,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="index.jsp"><img src="images/logo.png" alt=" " ></a>
 				</div>
 				<div class="header-in">
-					<ul class="icon1 sub-icon1">
-							<li  ><a href="wishlist.html">DANH SÁCH</a> </li>
-							<li  ><a href="account.html">  TÀI KHOẢN </a></li>
-							<li ><a href="#" > GIỎ HÀNG </a></li>
-							<li > <a href="checkout.html" >KIỂM TRA</a> </li>	
-							<li><div class="cart">
-									<a href="#" class="cart-in"> </a>
-									<span> 0</span>
-								</div>
-								<ul class="sub-icon1 list">
-						  <h3>Recently added items(2)</h3>
-						  <div class="shopping_cart">
-							  <div class="cart_box">
-							   	 <div class="message">
-							   	     <div class="alert-close"> </div> 
-					                <div class="list_img"><img src="images/14.jpg" class="img-responsive" alt=""></div>
-								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
-		                             $12.00</span></div>
-		                              <div class="clearfix"></div>
-	                              </div>
+                                     <ul class="icon1 sub-icon1">
+                                         <%  if(users!=null) { %>
+                                            <li><a href="wishlist.html"><%=users.getUserEmail()%></a></li>
+                                        <%
+                                            }
+                                        %>
+                                            <li><a href="wishlist.html">YÊU THÍCH</a> </li>
+                                            <li><a href="account.html">  TÀI KHOẢN </a></li>
+                                            <li><a href="checkout.jsp" > GIỎ HÀNG </a></li>
+                                            <li> <a href="login.jsp" >LOGIN</a> </li>	
+                                            <li><div class="cart">
+                                            <a href="#" class="cart-in"> </a>
+                                            <span> 0</span>
+				</div>
+                                    <ul class="sub-icon1 list">
+					<h3>Recently added items(2)</h3>
+				<div class="shopping_cart">
+                                    <div class="cart_box">
+                                        <div class="message">
+                                            <div class="alert-close"> </div> 
+                                            <div class="list_img"><img src="images/14.jpg" class="img-responsive" alt=""></div>
+                                            <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
+                                                     $12.00</span></div>
+                                            <div class="clearfix"></div>
+                                        </div>
 	                            </div>
-	                            <div class="cart_box1">
-								  <div class="message1">
-							   	     <div class="alert-close1"> </div> 
-					                <div class="list_img"><img src="images/15.jpg" class="img-responsive" alt=""></div>
-								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
-		                             $12.00</span></div>
-		                              <div class="clearfix"></div>
-	                              </div>
-	                            </div>
+                                <div class="cart_box1">
+                                                              <div class="message1">
+                                                                 <div class="alert-close1"> </div> 
+                                                    <div class="list_img"><img src="images/15.jpg" class="img-responsive" alt=""></div>
+                                                                <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
+                                         $12.00</span></div>
+                                          <div class="clearfix"></div>
+                                  </div>
+                                </div>
 	                        </div>
 	                        <div class="total">
 	                        	<div class="total_left">CartSubtotal : </div>
@@ -129,50 +144,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a class="toggleMenu" href="#">Menu</a>
 				<ul class="nav">
 					<li class="active"><a href="index.jsp"><i> </i>Trang chủ</a></li> 
-					<li ><a href="#" >Câu lạc bộ</a>
+					<li ><a href="#" >Danh mục</a>
 						<ul class="drop">
-							<li><a href="#">Premier League</a>
-                                                            <ul class="sub-drop">
-                                                                <li><a href="products.html">Arsenal</a></li>
-                                                                <li><a href="products.html">Chelsea</a></li>
-                                                                <li><a href="products.html">Liverpool</a></li>
-                                                                <li><a href="products.html">Manchester United</a></li>
-                                                                <li><a href="products.html">Manchester City</a></li>
-                                                                <li><a href="products.html">Tottenham</a></li>
-                                                            </ul>
-                                                        </li>
-							<li><a href="products.html">La Liga</a></li>
-							<li><a href="products.html">Serie & Ligue 1</a></li>
-							<li><a href="products.html">Bundesliga</a></li>
-							<li><a href="products.html">V League</a></li>
-							<li><a href="products.html">Giải khác</a></li>
+                                                    <%
+                                                        for(Category c : categoryDAO.getListCategorys()){
+                                                    %>
+							
+                                                    <li><a href="product.jsp?category<%=c.getCategoryID()%>"><%=c.getCategoryName()%></a></li>
+							
+                                                    <%
+                                                        }
+                                                    %>
 						</ul>
 						</li> 
-                                                <li ><a href="#" >Tuyển quốc gia</a>
-						<ul class="drop">
+                                                <li ><a href="#" >Mẫu mới nhất</a>
+<!--						<ul class="drop">
 							<li><a href="products.html">Đức</a></li>
-							<li><a href="products.html">Bỉ</a></li>
-							<li><a href="products.html">Anh</a></li>
+							<li><a href="products.html">Việt Nam</a></li>
 							<li><a href="products.html">Pháp</a></li>
 							<li><a href="products.html">Bồ Đào Nha</a></li>
-							<li><a href="products.html">Tây Ban Nha</a></li>
-                                                        <li><a href="products.html">Việt Nam</a></li>
-						</ul>
+						</ul>-->
 						</li> 
-						<li><a href="worldcup.jsp" >ĐỒ WORLD CUP</a></li>            
-						<!--<li><a href="products.html" ></a>ĐỒ WORLD CUP 2018</li>-->						  				 
-						<li><a href="aokhoac.jsp" >ÁO KHOÁC</a></li>
-						<li><a href="giay.jsp" >GÌAY</a></li>
-						<li><a href="products.html" >PHỤ KIỆN</a>
-                                                    <ul class="drop">
-							<li><a href="products.html">Bóng</a></li>
-							<li><a href="products.html">Cờ & Cúp</a></li>
-							<li><a href="products.html">Găng tay & Vớ</a></li>
-							<li><a href="products.html">Đồ thủ môn</a></li>
-							<li><a href="products.html">Túi CLB</a></li>
-                                                        <li><a href="products.html">Móc khóa</a></li>
-						</ul>
-                                                </li>
+                                                <li ><a href="#" >Mẫu bán chạy nhất</a>
+                                                <li ><a href="#" >Thông tin bóng đá</a>
 						<li><a href="contact.jsp" >Liên hệ</a></li>
 					
 				</ul>

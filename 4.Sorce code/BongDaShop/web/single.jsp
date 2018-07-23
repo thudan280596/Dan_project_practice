@@ -20,11 +20,11 @@
 						<ul id="etalage">
 							<li>
 								<a href="optionallink.html">
-									<img class="etalage_thumb_image img-responsive" src="images/si1.jpg" alt="" >
-									<img class="etalage_source_image img-responsive" src="images/si1.jpg" alt="" >
+									<img class="etalage_thumb_image img-responsive" src="images/giay1.jpg" alt="" >
+									<!--<img class="etalage_source_image img-responsive" src="images/giay1.jpg" alt="" >-->
 								</a>
 							</li>
-							<li>
+<!--							<li>
 								<img class="etalage_thumb_image img-responsive" src="images/si2.jpg" alt="" >
 								<img class="etalage_source_image img-responsive" src="images/si2.jpg" alt="" >
 							</li>
@@ -35,7 +35,7 @@
 						    <li>
 								<img class="etalage_thumb_image img-responsive" src="images/si1.jpg"  alt="" >
 								<img class="etalage_source_image img-responsive" src="images/si1.jpg" alt="" >
-							</li>
+							</li>-->
 						</ul>
 
 					</div>	
@@ -44,39 +44,44 @@
 							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
 							<div class="para-grid">
 								<span  class="add-to">$32.8</span>
-								<a href="#" class="hvr-shutter-in-vertical cart-to">Add to Cart</a>					
+								<a href="#" class="hvr-shutter-in-vertical cart-to">Thêm vào giỏ hàng</a>					
 								<div class="clearfix"></div>
 							 </div>
-							<h5>100 items in stock</h5>
+							<!--<h5>100 items in stock</h5>-->
 							<div class="available">
-								<h6>Available Options :</h6>
+								<h6>Tùy chọn có sẵn :</h6>
 								<ul>
-									<li>Color:
+									<li>Màu:
 										<select>
-										<option>Silver</option>
-										<option>Black</option>
-										<option>Dark Black</option>
-										<option>Red</option>
+										<option>Xanh bích</option>
+										<option>Cam</option>
+										<option>Chuối</option>
+										<option>Đỏ</option>
 									</select></li>
 								<li>Size:<select>
-									<option>Large</option>
-									<option>Medium</option>
-									<option>small</option>
-									<option>Large</option>
-									<option>small</option>
+									<option>39</option>
+									<option>40</option>
+									<option>41</option>
+									<option>42</option>
+									<option>43</option>
 								</select></li>
-								<li>Quality:<select>
+<!--								<li>Quality:<select>
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
-								</select></li>
+								</select></li>-->
 							</ul>
 						</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<p>Thông tin chi tiết: 
+- Đế giày làm bằng 100% cao su
+- Bảo hành 1 đổi 1 trong vòng 30 ngày.
+- Bảo hành keo trọn đời
+- Da giày mềm với form giày ôm chân tạo cảm giác tiếp xúc, xử lý bóng tốt nhất cho cầu thủ. 
+Đây là mẫu giày dự kiến sẽ cực HOT trong giới bóng đá phong trào trong năm 2018.</p>
 							
-								<a href="#" class="hvr-shutter-in-vertical ">More details</a>
+								<!--<a href="#" class="hvr-shutter-in-vertical ">More details</a>-->
 							
 						</div>
 					</div>
@@ -84,9 +89,9 @@
 				<div class="content-top-in">
 						<div class="col-md-4 top-single">
 							<div class="col-md">
-								<img  src="images/pic8.jpg" alt="" />	
+								<img  src="images/giay2.jpg" alt="" />	
 								<div class="top-content">
-									<h5>Mascot Kitty - White</h5>
+									<h5>COPA 2018</h5>
 									<div class="white">
 										<a href="#" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">ADD TO CART</a>
 										<p class="dollar"><span class="in-dollar">$</span><span>2</span><span>0</span></p>
@@ -127,13 +132,14 @@
 				</div>
 				<div class="col-md-3">
 					<div class="single-bottom">
-						<h4>Categories</h4>
+						<h4>DANH MỤC</h4>
 						<ul>
-						<li><a href="#"><i> </i>Fusce feugiat</a></li>
-						<li><a href="#"><i> </i>Mascot Kitty</a></li>
-						<li><a href="#"><i> </i>Fusce feugiat</a></li>
-						<li><a href="#"><i> </i>Mascot Kitty</a></li>
-						<li><a href="#"><i> </i>Fusce feugiat</a></li>
+						<li><a href="#"><i> </i>Đồ câu lạc bộ</a></li>
+						<li><a href="#"><i> </i>Tuyển quốc gia</a></li>
+<!--						<li><a href="#"><i> </i>Đồ world cup</a></li>-->
+<!--						<li><a href="#"><i> </i>Áo khoác</a></li>
+						<li><a href="#"><i> </i>Giày</a></li>
+                                                <li><a href="#"><i> </i>Phụ kiện</a></li>-->
 						</ul>
 					</div>
 					<div class="single-bottom">
