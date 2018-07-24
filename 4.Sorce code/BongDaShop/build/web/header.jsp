@@ -150,7 +150,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                         for(Category c : categoryDAO.getListCategorys()){
                                                     %>
 							
-                                                    <li><a href="product.jsp?category<%=c.getCategoryID()%>"><%=c.getCategoryName()%></a></li>
+                                                    <li><a href="product.jsp?category=<%=c.getCategoryID()%>"><%=c.getCategoryName()%></a></li>
 							
                                                     <%
                                                         }

@@ -3,6 +3,8 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.util.ArrayList;
+import Model.Category;
 import Model.Cart;
 import Model.Product;
 import DAO.ProductDAO;
@@ -50,14 +52,16 @@ public final class product_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>product</title>\n");
       out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        \n");
+      out.write("           \n");
       out.write("        ");
  
             ProductDAO productDAO = new ProductDAO();
@@ -66,10 +70,13 @@ public final class product_jsp extends org.apache.jasper.runtime.HttpJspBase
                 category_id = request.getParameter("category");
             }
            
+           
             
         
       out.write("\n");
       out.write("        \n");
+      out.write("    <body>\n");
+      out.write(" \n");
       out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "header.jsp", out, false);
       out.write("\n");

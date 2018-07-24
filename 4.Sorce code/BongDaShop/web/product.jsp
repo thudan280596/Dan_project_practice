@@ -4,6 +4,9 @@
     Author     : TUNGDUONG
 --%>
 
+<%@page import="java.util.ArrayList"%>
+
+<%@page import="Model.Category"%>
 <%@page import="Model.Cart"%>
 <%@page import="Model.Product"%>
 <%@page import="DAO.ProductDAO"%>
@@ -14,8 +17,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>product</title>
     </head>
-    <body>
-        
+           
         <% 
             ProductDAO productDAO = new ProductDAO();
             String category_id ="";
@@ -23,9 +25,12 @@
                 category_id = request.getParameter("category");
             }
            
+           
             
         %>
         
+    <body>
+ 
         <jsp:include page="header.jsp"></jsp:include>
        
         <br /><br />
@@ -42,7 +47,7 @@
                         
                         <div class="col-md-3 md-col">
                             <div class="col-md">
-                                <a href="single.jsp?product_id=<%=p.getProductID()%>"><img  src="<%=p.getProductImage()%>" alt="<%=p.getProductName()%>" /></a>
+                                <a href="single.jsp?product_id=<%=p.getProductID()%>"><img  src="<%=p.getProductImage()%>"  alt="<%=p.getProductName()%>" /></a>
                                 	
                                 <div class="top-content">
                                     <h5><a href="single.jsp?productID=<%=p.getProductID()%>"><%=p.getProductName()%></a></h5>
