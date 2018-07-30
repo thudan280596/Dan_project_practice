@@ -72,19 +72,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="footer-top">
 				<div class="container">
 					<div class="col-md-4 footer-in">
-						<h4><i> </i>Châm ngôn bóng đá</h4>
-						<p>"Tài năng không đi đôi với sự nỗ lực cũng vô dụng" - Cristiano Ronaldo </p>
-                                                <p>Trong bóng đá, đôi khi bạn phải giơ tay, thừa nhận rằng đối thủ hay hơn mình.</p>
+						<h4><i> </i>Giới thiệu về bóng đá</h4>
+                                                <p>Bóng đá là môn thể thao phổ biến và được yêu thích nhất trên thế giới từ xưa tới nay. Bóng đá là bình đẳng, không phân biệt màu da hay giới tính</p>
+						
+                                                <!--<p>Trong bóng đá, đôi khi bạn phải giơ tay, thừa nhận rằng đối thủ hay hơn mình.</p>-->
                                                 
 					</div>
 					<div class="col-md-4 footer-in">
-						<h4><i class="cross"> </i>Tin tức bóng đá</h4>
+						<h4><i class="cross"> </i>Châm ngôn bóng đá</h4>
                                                 <!--<a href="#"></a>-->
-                                                <p>“Tôi luôn tâm niệm, những gì mình có được hôm nay không tự dưng đến mà do khổ luyện mà thành. Nếu có suy nghĩ dừng lại thì đồng nghĩa tôi có thể mất” Công Vinh</p>
+                                                <p>"Tài năng không đi đôi với sự nỗ lực cũng vô dụng" - Cristiano Ronaldo </p>
+                                                <!--<p>Nếu bạn hỏi tại sao tôi chơi bóng đá, tôi sẽ hỏi tại sao bạn thở</p>-->
+                                                <!--<p>“Tôi luôn tâm niệm, những gì mình có được hôm nay không tự dưng đến mà do khổ luyện mà thành. Nếu có suy nghĩ dừng lại thì đồng nghĩa tôi có thể mất” Công Vinh</p>-->
 					</div>
 					<div class="col-md-4 footer-in">
-						<h4><i class="down"> </i>Suspendisse sed</h4>
-						<p>Aliquam dignissim porttitor tortor non fermentum. Curabitur in magna lectus. Duis sed eros diam. Lorem ipsum dolor sit amet, consectetur.</p>
+						<h4><i class="down"> </i>Thông tin</h4>
+<!--						<p>Cách chọn trang phục bóng đá</p>
+                                                <p>Ý nghĩa số áo cầu thủ</p>-->
+                                                <ul>
+                                                    <li><a href="#">Cách chọn trang phục bóng đá</a></li>
+                                                    <li><a href="#">Ý nghĩa số áo cầu thủ</a></li>
+                                                </ul>
+                                                
 					</div>
 					<div class="clearfix"></div>
 				</div>

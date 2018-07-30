@@ -20,6 +20,7 @@ import tools.MD5;
  *
  * @author Admin
  */
+
 public class UsersServlet extends HttpServlet {
 
     UsersDAO usersDAO = new UsersDAO();
@@ -34,12 +35,11 @@ public class UsersServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
         String command = request.getParameter("command");
         String url = "";
         Users users = new Users();
-        HttpSession  session = request.getSession();
-        switch(command){
+        HttpSession session = request.getSession();
+        switch (command) {
             case "insert":
                 users.setUserID(new java.util.Date().getTime());
                 users.setUserEmail(request.getParameter("email"));
@@ -49,21 +49,20 @@ public class UsersServlet extends HttpServlet {
                 session.setAttribute("user", users);
                 url = "/index.jsp";
                 break;
-            case "login" :
-                users = usersDAO.login(request.getParameter("email"), MD5.encryption(request.getParameter("pass")));
-                if(users!=null){
+            case "login":
+                users = usersDAO.login(request.getParameter("email"), request.getParameter("pass"));//sai nè...
+                if (users != null) {
                     session.setAttribute("user", users);
                     url = "/index.jsp";
-                }else {
-                    request.setAttribute("error", "Error email or password");
+                }else{
+                    request.setAttribute("error", "Error email or password!");
                     url = "/login.jsp";
                 }
-                
                 break;
         }
         RequestDispatcher rd = getServletContext().getRequestDispatcher(url);
         rd.forward(request, response);
-       
+
     }
 
  

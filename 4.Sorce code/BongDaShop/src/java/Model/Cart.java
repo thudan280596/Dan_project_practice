@@ -17,6 +17,7 @@ public class Cart {
     private HashMap<Long, Item> cartItem;
 
     public Cart() {
+        cartItem = new HashMap<>();
     }
 
     public Cart(HashMap<Long, Item> cartItem) {
@@ -38,20 +39,20 @@ public class Cart {
             int quantity_old = item.getQuantity();
             item.setQuantity(quantity_old + 1);
             cartItem.put(key, item);
-        }else {{
+//                cartItem.put(item.getProduct().getProductID(), item);
+        }else {
             cartItem.put(key, item);
+//            cartItem.put(item.getProduct().getProductID(), item);
         }
     }
-    
-    }
-    
+  
     // sub to cart
     
     public  void subToCart(Long key, Item item){
         boolean check = cartItem.containsKey(key);
         if(check){
             int quantity_old = item.getQuantity();
-            if(quantity_old <=1){
+            if(quantity_old <= 1){
                 cartItem.remove(key);
             }else {
                 item.setQuantity(quantity_old - 1);
@@ -71,6 +72,9 @@ public class Cart {
     // count item
     
     public int countItem(){
+//         int count = 0;
+//        count = cartItem.size();
+//        return count;
       return cartItem.size();
     }
     // sum total

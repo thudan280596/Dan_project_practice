@@ -31,10 +31,10 @@ public class CheckEmailServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         if (usersDAO.checkEmail(request.getParameter("username"))) {
-          response.getWriter().write("<img src=\"img/not-available.png\" />");
-     } else {
-          response.getWriter().write("<img src=\"img/available.png\" />");
-     }
+            response.getWriter().write("<img src=\"img/not-available.png\" />");
+        } else {
+            response.getWriter().write("<img src=\"img/available.png\" />");
+        }
     }
 
 }

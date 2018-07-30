@@ -5,20 +5,16 @@
  */
 package controller;
 
-import DAO.CategoryDAO;
-import Model.Category;
+import DAO.ProductDAO;
+import Model.Cart;
+import Model.Item;
+import Model.Product;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import sun.rmi.server.Dispatcher;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -26,39 +22,46 @@ import sun.rmi.server.Dispatcher;
  */
 public class CartServlet extends HttpServlet {
 
+    private final ProductDAO productDAO = new ProductDAO();
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        CategoryDAO category=new CategoryDAO();
-//        try {
-//            ArrayList<Category> list=new ArrayList<>();
-//           list= category.getListCategorys();
-//           request.setAttribute("category", list);
-//        } catch (SQLException ex) {
-//            Logger.getLogger(CartServlet.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        String url="/product.jsp";
-//        RequestDispatcher rd = getServletContext().getRequestDispatcher(url);
-//        rd.forward(request, response);
+        doPost(request, response);
+
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        CategoryDAO category=new CategoryDAO();
-//        try {
-//            ArrayList<Category> list=new ArrayList<>();
-//           list= category.getListCategorys();
-//           request.setAttribute("listcategory", list);
-//        } catch (SQLException ex) {
-//            Logger.getLogger(CartServlet.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        String url="/product.jsp";
-//        RequestDispatcher rd = getServletContext().getRequestDispatcher(url);
-//        rd.forward(request, response);
-//    }
-
-
+            HttpSession session = request.getSession();
+        String command = request.getParameter("command");
+        String productID = request.getParameter("productID");
+        Cart cart = (Cart) session.getAttribute("cart");
+        
+        try {
+            Long idProduct = Long.parseLong(productID);
+            Product product = productDAO.getProduct(idProduct);
+            switch (command) {
+                case "plus":
+                    if (cart.getCartItem().containsKey(idProduct)) {
+                        cart.plusToCart(idProduct, new Item(product,
+                                cart.getCartItem().get(idProduct).getQuantity()));
+                    } else {
+                        cart.plusToCart(idProduct, new Item(product, 1));
+                    }
+                    break;
+                case "remove":
+                    cart.removeToCart(idProduct);
+                    break;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            response.sendRedirect("/BongDaShop/index.jsp");
+        }
+        session.setAttribute("cart", cart);
+        response.sendRedirect("/BongDaShop/index.jsp");
+    }
+    
 }
-}
+

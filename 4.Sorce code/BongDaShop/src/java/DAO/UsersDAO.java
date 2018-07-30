@@ -19,6 +19,7 @@ import java.util.logging.Logger;
  * @author Admin
  */
 public class UsersDAO {
+    
     // kiểm tra email tồn tại chưa
     
     public boolean checkEmail(String email){
@@ -42,13 +43,14 @@ public class UsersDAO {
     // phương thức thêm tài khoản
     public boolean insertUsers(Users u){
         Connection  connection = DBConnect.getConnection();
-        String sql = "INSERT INTO users VALUE (?,?,?,?)";
+        String sql = "INSERT INTO users VALUES (?,?,?,?)";
         try {
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.setLong(1, u.getUserID());
             ps.setString(2, u.getUserEmail());
             ps.setString(3, u.getUserPass());
             ps.setBoolean(4, u.isUserRole());
+             ps.executeUpdate();
             return true;
         } catch (SQLException ex) {
             Logger.getLogger(UsersDAO.class.getName()).log(Level.SEVERE, null, ex);
