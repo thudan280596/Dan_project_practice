@@ -3,11 +3,8 @@ package org.apache.jsp.admin;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import Model.Category;
-import java.util.ArrayList;
-import DAO.CategoryDAO;
 
-public final class manager_005fcategory_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class insert_005fcategory_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -58,31 +55,31 @@ public final class manager_005fcategory_jsp extends org.apache.jasper.runtime.Ht
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>Quản lý danh mục</title>\n");
-      out.write("         ");
+      out.write("        \n");
+      out.write("          ");
       if (_jspx_meth_c_set_0(_jspx_page_context))
         return;
       out.write("\n");
       out.write("        <link href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${root}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/css/mos-style.css\" rel='stylesheet' type='text/css' />\n");
+      out.write("        \n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        \n");
       out.write("        ");
 
-            CategoryDAO categoryDAO = new CategoryDAO();
-            ArrayList<Category> listCategory = categoryDAO.getListCategorys();
+            String error = "";
+            if(request.getParameter("error")!=null){
+                error = (String) request.getParameter("error");
+            }
         
       out.write("\n");
-      out.write("        \n");
+      out.write("       \n");
       out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "header.jsp", out, false);
       out.write("\n");
@@ -94,50 +91,23 @@ public final class manager_005fcategory_jsp extends org.apache.jasper.runtime.Ht
       out.write("\n");
       out.write("        \n");
       out.write("        <div id=\"rightContent\">\n");
-      out.write("            <h3>Quản lý danh mục</h3>\n");
+      out.write("            <h3>Thông tin danh mục</h3>\n");
       out.write("\n");
-      out.write("            <a href=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${root}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/admin/insert_category.jsp\">Thêm danh mục</a>\n");
-      out.write("\n");
-      out.write("                     <table class=\"data\">\n");
-      out.write("                             <tr class=\"data\">\n");
-      out.write("                                     <th class=\"data\" width=\"30px\">STT</th>\n");
-      out.write("                                     <th class=\"data\">Mã danh mục</th>\n");
-      out.write("                                     <th class=\"data\">Tên danh mục</th>\n");
-      out.write("                                     <th class=\"data\" width=\"90px\">Tùy chọn</th>\n");
-      out.write("                             </tr>\n");
-      out.write("\n");
-      out.write("                     ");
-
-                         int count = 0;
-                            for(Category category : listCategory){
-                                count++;
-                     
-      out.write("\n");
-      out.write("\n");
-      out.write("                             <tr class=\"data\">\n");
-      out.write("                                     <td class=\"data\" width=\"30px\">");
-      out.print(count);
+      out.write("            <form action=\"/BongDaShop/ManagerCategoryServlet\" method=\"post\" > \n");
+      out.write("                    <table width=\"95%\">\n");
+      out.write("                        <tr>\n");
+      out.write("                            <td style=\"float: right\"><b>Tên danh mục</b></td>\n");
+      out.write("                            <td><input type=\"text\" class=\"sedang\" name=\"tenDanhMuc\">");
+      out.print(error);
       out.write("</td>\n");
-      out.write("                            <td class=\"data\">");
-      out.print(category.getCategoryID());
-      out.write("</td>\n");
-      out.write("                            <td class=\"data\">");
-      out.print(category.getCategoryName());
-      out.write("</td>\n");
-      out.write("                                     <td class=\"data\" width=\"90px\">\n");
-      out.write("                                         <center>\n");
-      out.write("                                             <a href=\"#\">Sửa</a>&nbsp;&nbsp;| &nbsp;&nbsp;\n");
-      out.write("                                             <a href=\"#\">Xóa</a>\n");
-      out.write("                                         </center>\n");
-      out.write("                                     </td>\n");
-      out.write("                             </tr>\n");
-      out.write("                     ");
- } 
-      out.write("\t\n");
-      out.write("                     </table>\n");
-      out.write("         </div>\n");
+      out.write("                        </tr>\n");
+      out.write("                            <tr><td></td><td>\n");
+      out.write("                                <input type=\"hidden\" name=\"command\" value=\"insert\">\n");
+      out.write("                                <input type=\"submit\" class=\"button\" value=\"Lưu dữ liệu\">\n");
+      out.write("                            </td></tr>\n");
+      out.write("                    </table>\n");
+      out.write("            </form>\n");
+      out.write("\t</div>\n");
       out.write("        <div class=\"clear\"></div>\n");
       out.write("        \n");
       out.write("         ");
