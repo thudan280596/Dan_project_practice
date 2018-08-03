@@ -85,3 +85,6 @@ public class ManagerCategoryServlet extends HttpServlet {
     }
 
 }
+//new Category(new Date().getTime() là gì..sao trong kia là id mà đây là ngày.. pk lỗi chưa..tự sửa hak
+// xem luôn cái DB, nó khong ghi tieng viet dc
+// hôm qua bị gì không đc, để sửa lại thử

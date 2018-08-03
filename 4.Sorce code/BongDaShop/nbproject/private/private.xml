@@ -3,9 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/src/java/DAO/CategoryDAO.java</file>
-            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/admin/insert_category.jsp</file>
-            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/admin/insert_product.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/product.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/admin/manager_category.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/single.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/admin/content.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/admin/header.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/src/java/controller/UploadServlet.java</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/content.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/admin/index.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/login.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/admin/manager_product.jsp</file>
+            <file>file:/C:/Users/Admin/Desktop/dan_project/4.Sorce%20code/BongDaShop/web/admin/login.jsp</file>
         </group>
     </open-files>
 </project-private>

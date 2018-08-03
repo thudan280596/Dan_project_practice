@@ -23,32 +23,33 @@
                 error = (String) request.getParameter("error");
             }
         %>
-       
-        <jsp:include page="header.jsp"></jsp:include>
-        
-        <div id="wrapper">
-        
-        <jsp:include page="menu.jsp"></jsp:include>
-        
-        <div id="rightContent">
-            <h3>Thông tin danh mục</h3>
 
-            <form action="/BongDaShop/ManagerCategoryServlet" method="post" > 
+        <jsp:include page="header.jsp"></jsp:include>
+
+            <div id="wrapper">
+
+            <jsp:include page="menu.jsp"></jsp:include>
+
+                <div id="rightContent">
+                    <h3>Thông tin danh mục</h3>
+                    <form action="/BongDaShop/ManagerCategoryServlet" method="post">
                     <table width="95%">
                         <tr>
-                            <td style="float: right"><b>Tên danh mục</b></td>
+                            <td style="float: right"><b>Tên danh mục:</b></td>
                             <td><input type="text" class="sedang" name="tenDanhMuc"><%=error%></td>
                         </tr>
-                            <tr><td></td><td>
+                        <tr><td></td><td>
                                 <input type="hidden" name="command" value="insert">
                                 <input type="submit" class="button" value="Lưu dữ liệu">
-                            </td></tr>
+                            </td>
+                        </tr>
                     </table>
-            </form>
-	</div>
-        <div class="clear"></div>
-        
-         <jsp:include page="footer.jsp"></jsp:include>
-        
+                    </form>
+                </div>
+                <div class="clear"></div>
+
+            <jsp:include page="footer.jsp"></jsp:include>
+
+        </div>
     </body>
 </html>

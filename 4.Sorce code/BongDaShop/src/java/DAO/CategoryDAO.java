@@ -6,7 +6,7 @@
 package DAO;
 
 import Model.Category;
-import com.sun.xml.ws.tx.at.v10.types.PrepareResponse;
+
 import connect.DBConnect;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -82,18 +82,18 @@ public class CategoryDAO {
     public static void main(String[] args) throws SQLException {
         CategoryDAO  dao = new CategoryDAO();
         //in danh sach
-//        for(Category ds : dao.getListCategorys()){
-//            System.out.println(ds.getCategoryID() + " - " + ds.getCategoryName());
-//        }
-// theem moi
-        for(int i=10; i < 11; i++){
-            dao.insertCategory(new Category(i, "Category "+i));
+        for(Category ds : dao.getListCategorys()){
+            System.out.println(ds.getCategoryID() + " - " + ds.getCategoryName());
         }
-        
+// theem moi
+//        for(int i=10; i < 11; i++){
+//            dao.insertCategory(new Category(i, "Category "+i));
+//        }
+//        
 // cap nhat du lieu
-//        System.out.println(dao.updateCategory(new Category(8, "liverpool")));
+//        System.out.println(dao.updateCategory(new Category(1, "liverpool")));
         
 //        xóa dữ liệu
-//        System.out.println(dao.deleteCategory(11));
+//        System.out.println(dao.deleteCategory(10));
     }
 }

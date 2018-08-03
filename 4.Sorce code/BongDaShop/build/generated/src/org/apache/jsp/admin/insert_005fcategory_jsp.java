@@ -93,7 +93,7 @@ public final class insert_005fcategory_jsp extends org.apache.jasper.runtime.Htt
       out.write("        <div id=\"rightContent\">\n");
       out.write("            <h3>Thông tin danh mục</h3>\n");
       out.write("\n");
-      out.write("            <form action=\"/BongDaShop/ManagerCategoryServlet\" method=\"post\" > \n");
+      out.write("             <form action=\"/BongDaShop/ManagerCategoryServlet\" method=\"post\">\n");
       out.write("                    <table width=\"95%\">\n");
       out.write("                        <tr>\n");
       out.write("                            <td style=\"float: right\"><b>Tên danh mục</b></td>\n");
@@ -113,6 +113,8 @@ public final class insert_005fcategory_jsp extends org.apache.jasper.runtime.Htt
       out.write("         ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "footer.jsp", out, false);
       out.write("\n");
+      out.write("         \n");
+      out.write("        </div>\n");
       out.write("        \n");
       out.write("    </body>\n");
       out.write("</html>\n");

@@ -115,8 +115,8 @@
                                 <div class="top-content">
                                     <h5><a href="single.jsp?productID=<%=p.getProductID()%>"><%=p.getProductName()%></a></h5>
                                     <div class="white">
-                                        <a href="CartServlet?command=plus&productID=<%=p.getProductID()%>" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 ">ADD TO CART</a>
-                                        <p class="dollar"><span class="in-dollar">$</span><span><%=p.getProductPrice()%></span></p>
+                                        <a href="CartServlet?command=plus&productID=<%=p.getProductID()%>" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 ">Thêm vào giỏ</a>
+                                        <p class="dollar"><span class="in-dollar">VNĐ</span><span><%=p.getProductPrice()%></span></p>
                                         <div class="clearfix"></div>
                                     </div>
 

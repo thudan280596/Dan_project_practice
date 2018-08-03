@@ -54,10 +54,10 @@
                                 <%if (users != null) {%>
                                 <li><a href="wishlist.html"><%=users.getUserEmail()%></a> </li>
                                     <%}%>
-                                <li><a href="wishlist.html">WISH LIST (0)</a> </li>
-                                <li><a href="account.html">  MY ACCOUNT</a></li>
-                                <li><a href="index.jsp"> SHOPPING CART</a></li>
-                                <li><a href="checkout.jsp" >CHECKOUT</a> </li>	
+                                <li><a href="#">SẢN PHẨM YÊU THÍCH</a> </li>
+                                <li><a href="#">TÀI KHOẢN</a></li>
+                                <li><a href="register.jsp">ĐĂNG KÍ</a></li>
+                                <li><a href="checkout.jsp" >KIỂM TRA</a> </li>	
                                 <li><div class="cart">
                                         <a href="#" class="cart-in"> </a>
                                         <span> <%=cart.countItem()%></span>
@@ -86,7 +86,7 @@
                                             <div class="clearfix"> </div>
                                         </div>
                                         <div class="login_buttons">
-                                            <div class="check_button"><a href="checkout.jsp">Check out</a></div>
+                                            <div class="check_button"><a href="checkout.jsp">Kiểm tra</a></div>
                                             <div class="clearfix"></div>
                                         </div>
                                         <div class="clearfix"></div>

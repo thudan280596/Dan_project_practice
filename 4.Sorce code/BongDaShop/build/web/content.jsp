@@ -24,7 +24,7 @@
 									<h5><a href="single.jsp">Orange Real</a></h5>
 									<div class="white">
 										<a href="single.jsp" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2 ">THÊM VÀO GIỎ</a>
-										<p class="dollar"><span class="in-dollar">$</span><span>2</span><span>0</span></p>
+										<p class="dollar"><span class="in-dollar">VNĐ</span><span>90000</span></p>
 										<div class="clearfix"></div>
 									</div>
 
@@ -38,7 +38,7 @@
 									<h5><a href="single.jsp">Orange FCB</a></h5>
 									<div class="white">
 										<a href="single.jsp" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">THÊM VÀO GIỎ</a>
-										<p class="dollar"><span class="in-dollar">$</span><span>3</span><span>0</span></p>
+										<p class="dollar"><span class="in-dollar">VNĐ</span><span>90000</span></p>
 										<div class="clearfix"></div>
 									</div>
 								</div>							
@@ -52,7 +52,7 @@
 									<h5><a href="single.jsp">Red MU</a></h5>
 									<div class="white">
 										<a href="single.jsp" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">THÊM VÀO GIỎ</a>
-										<p class="dollar"><span class="in-dollar">$</span><span>5</span><span>0</span></p>
+										<p class="dollar"><span class="in-dollar">VNĐ</span><span>90000</span></p>
 										<div class="clearfix"></div>
 									</div>
 								</div>							
@@ -67,7 +67,7 @@
 									<h5><a href="single.jsp">Grey MU</a></h5>
 									<div class="white">
 										<a href="single.jsp" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">THÊM VÀO GIỎ</a>
-										<p class="dollar"><span class="in-dollar">$</span><span>4</span><span>5</span></p>
+										<p class="dollar"><span class="in-dollar">VNĐ</span><span>90000</span></p>
 										<div class="clearfix"></div>
 									</div>
 								</div>							
