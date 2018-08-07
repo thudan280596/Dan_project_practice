@@ -116,8 +116,8 @@
                                         %>
                                 </ul>
                             </li> 						
-                            <li><a href="products.html" > Mẫu mới nhất</a></li>            
-                            <li><a href="products.html" >Mẫu bán chạy nhất</a></li>						  				 
+                            <li><a href="productnew.jsp" > Mẫu mới</a></li>            
+                            <li><a href="productRun.jsp" >Mẫu bán chạy nhất</a></li>						  				 
                             <li><a href="products.html" >Thông tin bóng đá</a></li>
                             <li><a href="contact.jsp" >Liên hệ</a></li>
 
@@ -137,21 +137,14 @@
                                 <li><a href="#"><i class="twitter"> </i></a></li>					
                                 <li><a href="#"><i class="skype"> </i></a></li>
                             </ul>	
-                            <div class="down-top">		
-                                <select class="in-drop">
-                                    <option value="Dollars" class="in-of">Dollars</option>
-                                    <option value="Euro" class="in-of">Euro</option>
-                                    <option value="Yen" class="in-of">Yen</option>
-                                </select>
-                            </div>
-                            <div class="search">
+<!--                            <div class="search">
                                 <form>
                                     <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {
                                                 this.value = '';
                                             }" >
                                     <input type="submit" value="">
                                 </form>
-                            </div>
+                            </div>-->
 
                             <div class="clearfix"> </div>
                         </div>

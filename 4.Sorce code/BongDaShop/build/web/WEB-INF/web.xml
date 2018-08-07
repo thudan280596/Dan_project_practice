@@ -4,7 +4,6 @@
         <servlet-name>CheckEmailServlet</servlet-name>
         <servlet-class>controller.CheckEmailServlet</servlet-class>
     </servlet>
-    
     <servlet>
         <servlet-name>UsersServlet</servlet-name>
         <servlet-class>controller.UsersServlet</servlet-class>
@@ -32,6 +31,10 @@
     <servlet>
         <servlet-name>ChartServlet</servlet-name>
         <servlet-class>controller.ChartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>adminServlet</servlet-name>
+        <servlet-class>controller.adminServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CheckEmailServlet</servlet-name>
@@ -64,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>ChartServlet</servlet-name>
         <url-pattern>/admin/ChartServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adminServlet</servlet-name>
+        <url-pattern>/adminServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

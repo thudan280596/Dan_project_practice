@@ -35,17 +35,9 @@
         <div id="rightContent">
        <h3>Quản lý sản phẩm</h3>
 	
-	<div class="informasi">
-	ini adalah notifikasi pertanda informasi
-	</div>
 	
-	<div class="gagal">
-	ini adalah notifikasi pertanda gagal
-	</div>
 	
-	<div class="sukses">
-	ini adalah notifikasi pertanda sukses
-	</div>
+	<a href="${root}/admin/insert_product.jsp">Thêm sản phẩm</a>
 		<table class="data">
 			<tr class="data">
 				<th class="data" width="30px">STT</th>

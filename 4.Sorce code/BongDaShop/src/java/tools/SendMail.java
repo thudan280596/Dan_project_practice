@@ -48,7 +48,8 @@ public class SendMail {
         return true;
 }
     public static void main(String[] args) {
-        System.out.println(sendMail("lethithudan@gmail.com", "Thông tin đơn hàng", "Chào Dân"));
+        System.out.println(sendMail("lethithudan@gmail.com", "Thông tin đơn hàng", "Chào Dân Thu Lê"));
+        System.out.println(sendMail("nguyenthixuantien97@gmail.com", "Thông tin đơn hàng", "Chào Tiên"));
     }
     
 }

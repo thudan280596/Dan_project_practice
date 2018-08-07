@@ -26,12 +26,12 @@
             Login Administrator
             </div>
             <div class="fieldLogin">
-            <form method="POST" action="">
+            <form action="${root}/adminServlet" method="POST" >
             <label>Username</label><br>
-            <input type="text" class="login"><br>
+            <input type="text" class="login" name="username"><br>
             <label>Password</label><br>
-            <input type="password" class="login"><br>
-            <input type="submit" class="button" value="Login">
+            <input type="password" class="login" name="password"><br>
+            <input type="submit" name="command" class="button" value="login">
             </form>
             </div>
     </div>

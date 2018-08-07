@@ -29,20 +29,22 @@
 	<h3>Thông tin sản phẩm</h3>
 	
 		
-	
+       
 		<table width="95%">
-			<tr><td><b>Tên sản phẩm</b></td><td><input type="text" class="sedang"></td></tr>
-                        <tr><td><b>Giá bán</b></td><td><input type="text" class="sedang"></td></tr>
+			<tr><td><b>Tên sản phẩm</b></td><td><input id="txtTensp" name="tensanpham" type="text" class="sedang"></td></tr>
+                        <tr><td><b>Giá bán</b></td><td><input id="txtGia" name="giaban" type="text" class="sedang"></td></tr>
 			<tr><td><b>Loại sản phẩm</b></td><td>
-				<select>
+				<select name="loai">
 					<option selected>-- Chọn loại sản phẩm --</option>
-					<option value="">Arsenal</option>
-                                        <option value="">Barcelona</option>
+					<option value="ar">Arsenal</option>
+                                        <option value="ba">Barcelona</option>
+                                        <option value="re">Real Madrid</option>
+                                        <option value="ma">Manchester City</option>
 				</select>
 			</td></tr>
 			<tr><td><b>Mô tả sản phẩm</b></td>
                             <td>
-                                <textarea class="form-textarea" id="noiDung"></textarea>
+                                <textarea class="form-textarea" id="noiDung" name="noidung"></textarea>
                                 <script type="text/javascript" language="javascript">
                                    CKEDITOR.replace('noiDung', {width: '500px',height: '300px'});
                                 </script>
@@ -50,15 +52,15 @@
                         </tr>
                         <tr><td><b>Hình ảnh</b></td><td><input type="file"></td></tr>
 			<tr><td></td><td>
-			<input type="button" class="button" value="Button">
-			<input type="submit" class="button" value="Submit">
+                        <input type="submit" class="button" onclick="submit()"/>
 			<input type="reset" class="button" value="Reset">
 			</td></tr>
                         
 		</table>
+       
 	</div>
         <div class="clear"></div>
-        
+       
          <jsp:include page="footer.jsp"></jsp:include>
         
         </div>

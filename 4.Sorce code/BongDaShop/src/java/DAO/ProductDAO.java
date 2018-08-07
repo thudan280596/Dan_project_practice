@@ -21,7 +21,7 @@ public class ProductDAO {
     // get danh sách sản phẩm dựa vào mã danh mục
     public ArrayList<Product> getListProductBycategory(long category_id) throws SQLException{
         Connection connection = DBConnect.getConnection();
-        String sql = "SELECT * FROM product WHERE category_id = '"+ category_id +"'";
+        String sql = "SELECT * FROM product WHERE product_role = '" + category_id + "'";
         PreparedStatement ps = connection.prepareCall(sql);
         ResultSet rs = ps.executeQuery();
         ArrayList<Product> list = new ArrayList<>();
@@ -94,7 +94,7 @@ public class ProductDAO {
 //            System.out.println(p.getProductID() + " - " + p.getProductName());
 //        }
 //        System.out.println(dao.getProduct(3).getProductName());
-        System.out.println(dao.countProductByCategory(1));
+        System.out.println(dao.getListProductBycategory(0));
     }
     
 

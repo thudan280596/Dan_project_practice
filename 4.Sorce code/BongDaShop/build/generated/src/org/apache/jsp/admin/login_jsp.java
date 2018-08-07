@@ -80,12 +80,12 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            Login Administrator\n");
       out.write("            </div>\n");
       out.write("            <div class=\"fieldLogin\">\n");
-      out.write("            <form method=\"POST\" action=\"\">\n");
+      out.write("            <form action=\"adminServlet\" method=\"POST\" >\n");
       out.write("            <label>Username</label><br>\n");
-      out.write("            <input type=\"text\" class=\"login\"><br>\n");
+      out.write("            <input type=\"text\" class=\"login\" name=\"username\"><br>\n");
       out.write("            <label>Password</label><br>\n");
-      out.write("            <input type=\"password\" class=\"login\"><br>\n");
-      out.write("            <input type=\"submit\" class=\"button\" value=\"Login\">\n");
+      out.write("            <input type=\"password\" class=\"login\" name=\"password\"><br>\n");
+      out.write("            <input type=\"submit\" class=\"button\" value=\"login\">\n");
       out.write("            </form>\n");
       out.write("            </div>\n");
       out.write("    </div>\n");

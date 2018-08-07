@@ -17,7 +17,7 @@
             <div class="inHeader">
                 <div class="mosAdmin">
                 Xin chào, Admin<br>
-                    <a href="/BongDaShop/index.jsp">Đến với website</a> | <a href="">Trợ giúp</a> | <a href="login.jsp">Đăng nhập</a>
+                    <a href="/BongDaShop/index.jsp">Đến với website</a> | <a href="">Trợ giúp</a> 
                 </div>
                 <div class="clear"></div>
             </div>
